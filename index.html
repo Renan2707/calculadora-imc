@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/scripts.js"defer></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <div class="bg-blue-950 min-h-screen flex items-center justify-center">
+
+        <div id="calculadora"class="pb-8 w-[450px] bg-gray-700 rounded-xl px-8">
+            <div>
+                <h1 class="text-white font-semibold text-center text-3xl mt-4">
+                    Calculadora de IMC
+                </h1>
+            </div>
+            <form>
+                <div id="" class="mt-6 space-y-10">
+                    <div>
+                        <span class="text-orange-500 font-semibold">Altura:</span>
+                        <input id="altura" type="text" class="w-full rounded placeholder-gray-400 text-sm h-12" placeholder="Exemplo: 1,83">
+                    </div>
+                    <div>
+                        <span class="text-orange-500 font-semibold">Peso:</span>
+                        <input  id="peso" type="text" class="w-full rounded placeholder-gray-400 text-sm h-12" placeholder="Exemplo: 79,9">
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-center space-x-4 w-full mt-8">
+                    <button id="calcular" type="submit" class="bg-orange-600 text-white font-semibold text-2xl px-2 py-1 w-28 h-12 rounded hover:bg-orange-700 transition">Calcular</button>
+                    <button id="limpar" type="button" class="bg-gray-400 text-white font-semibold text-2xl px-2 py-1 w-28 h-12 rounded transition hover:opacity-75">Limpar</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="resultado" class="hidden pb-8 w-[450px] bg-gray-700 rounded-xl px-8 text-white">
+            <div id="imc-table">
+
+            
+                <div class="text-center">
+                    <h2 id="imc-number" class="text-white font-semibold text-center text-3xl mt-4">Seu IMC é: <span ></span></h2>
+                    <p id="imc-info" class="text-lg ">Situação Atual: <span></span></p>
+                </div>
+
+                <h3 class="text-center mt-4 italic">Confira as classificações:</h3>
+
+                <div>
+                    <div class="flex w-full justify-between text-center border-b mt-5 border-gray-200">
+                        <h3 class="w-52">IMC</h3>
+                        <h3 class="w-40">Classificação</h3>
+                        <h3 class="w-32">Obesidade</h3>
+                    </div>
+
+                    
+                </div>
+            </div>
+            <div class="flex items-center justify-center mt-10">
+               <button id="btn-voltar" type="button" class="bg-orange-600 text-white font-semibold text-2xl px-2 py-1 w-56 h-12 rounded hover:bg-orange-700 transition">Voltar</button>
+            </div>
+        </div>
+        
+
+    </div>
+</body>
+</html>
