@@ -1,2 +1,1 @@
-"# calculadora-imc"  
-"# calculadora-imc"  
+"# calculadora-imc" 
